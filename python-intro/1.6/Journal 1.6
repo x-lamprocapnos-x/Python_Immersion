@@ -1,0 +1,48 @@
+Learning Goals
+
+⦁	Create a MySQL database for your Recipe app
+
+Reflection Questions
+
+1.	What are databases and what are the advantages of using them?
+
+A. Databases are the backbone of any application, providing a structured system for store, managing, and retrieving data. Databases enable organization
+    through the use of tables, rows, and columns, often with unique IDs to ensure referencing and identifying records. Databases can store a wide variety of information, 
+    like user accounts, products, inventories, transaction histories, and in my case recently recipes. When a user interacts with the front end 
+    (ex. submitting a form or clicking buttons) the backend processes the requests and interacts with the database to store, retrieve, or update the necessary data.
+    This smooth interaction between the front end, backend, and database ensure the application runs seamlessly.
+
+
+
+2.	List 3 data types that can be used in MySQL and describe them briefly:
+
+
+Data type	Definition
+VARCHAR     Variable Character stores strings of variable length, such as names, emails, or text data.
+INT         Integer stores whole numbers, either postive or negative without any decimal places.
+DATE        Stores dates in the format YYYY-MM-DD
+	
+	
+
+3.	 In what situations would SQLite be a better choice than MySQL?
+
+A. SqLite is a better choice than MySQL when working on smaller projects that dont require the complexity of a fully equipped database management system.
+    Unline MySQL, SQLite is serverless and doesn't require installation or setup, making it lightweight and portable. Instead of running a seperate database
+    server, SQLite stores all it's data into a single database file (.db), which can be easily shared and included with the project.
+    SqLite is perfect for application where there's only one user or process accessing the database at a time, as it doesn't handle synchronous connections
+    as well as MySQL. It's a compact solution that still supports essential features such as various data types, indexing, and SQL syntax, but without the overhead
+    of managing a server.
+
+4.	Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+
+A. At first thought i didn't think they had alot in common, as I've primarily used javascript for front end coding. Both are very powerful languages that are popular and widely-used.
+    The main differences between JavaScript and Python are the use cases, environments, and performance. Javascript is commonly used for web development and interactive applications
+    while Python is used for backend systems, automation, and data intensive applications. Javascript is faster is most scenarios because of it's built in asynchronous capabilities,
+    Python supports asynchronous programming but focuses more on simplifying complex tasks. Python is better suited for machine learning and AI due to its simplicity, where Javascript is 
+    capable of machine learning but the language itself has a more complex syntax.
+
+5.	Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+
+A. Python is a wonderful choice for a wide range of applications, in spite of that python seems to have performance limitations, and not enough optimization to support mobile apps and game
+    development. Python's simplicity, readability, and extensive libraries obviously outweigh these limitations, especially for data analytics, and machine learning, but as the world progresses
+    into a portable lifestyle for most people I would hope to see python increase it's presence in mobile platforms.

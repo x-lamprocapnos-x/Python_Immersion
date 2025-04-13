@@ -1,0 +1,40 @@
+
+
+1. Write two to three sentences on why Django is so popular among web developers.
+
+Django is a popular framework because it is built with Python, making it easy to learn and use. It comes with built-in features such as CDN support, content management, and automated encryption, reducing development time. Additionally, Django has a large and active community, providing extensive support and documentation. Its scalability, thanks to its "loosely coupled" architecture, allows developers to easily add new components and handle increasing traffic.
+
+
+2. After some research, list five large companies that use Django. Specify what the company’s product or service is and what they use Django for.
+
+- The Onion – An American satirical news website that transitioned to Django in 2009 to manage its entire site infrastructure. Django helps The Onion efficiently handle high traffic and content management.
+
+
+- Reddit – A social media platform with thousands of communities (subreddits). Reddit uses Django for backend services, including user authentication, request handling, and managing vast amounts of data.
+
+
+- Spotify – A leading music, podcast, and audiobook streaming service. Spotify leverages Django for backend services, machine learning algorithms, and data analytics to provide personalized recommendations.
+
+
+- Disqus – A third-party commenting system integrated into thousands of websites. Disqus relies on Django for request handling, routing, and templating, though they have added caching mechanisms to manage the high volume of user comments.
+
+
+- Dropbox – A cloud storage service that enables file sharing and synchronization. Dropbox uses Python and Django for both server-side operations and its desktop client, ensuring seamless performance and scalability.
+
+
+3. For each of the following scenarios, explain if you would use Django (and why or why not):
+
+- You need to develop a web application with multiple users : 
+Yes, Django is ideal because of its built-in authentication system, security features, and database management, making user management seamless.
+
+- You need fast deployment and the ability to make changes as you proceed : 
+Yes, Django supports rapid development with its MVT (Model-View-Template) architecture and built-in features, allowing developers to iterate and deploy quickly.
+
+- You need to build a very basic application, which doesn’t require any database access or file operations :
+No, Django would be overkill in this case. Its strength lies in handling databases and complex backend operations, making it unnecessary for a simple static application.
+
+- You want to build an application from scratch and want a lot of control over how it works : 
+No, Django enforces a strict framework structure, which may limit flexibility for highly customized architectures. A lightweight framework like Flask would be a better choice.
+
+- You’re about to start working on a big project and are afraid of getting stuck and needing additional support : 
+Yes, Django is well-suited for large projects due to its structured approach and extensive community support, reducing the chances of running into roadblocks.

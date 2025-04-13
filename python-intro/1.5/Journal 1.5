@@ -1,0 +1,39 @@
+Learning Goals
+
+⦁	Apply object-oriented programming concepts to your Recipe app
+
+Reflection Questions
+
+1.	In your own words, what is object-oriented programming? What are the benefits of OOP?
+
+A. Object oriented programming is a go to coding model primarily used to follow a "Dont repeat yourself" idea.
+    OOP focuses on creating reusable and self contained pieces of code called "objects." 
+    Objects combine data and methods into a single form, making it easier to reuse between different classes,
+    and maintain the readabilty of the code.
+
+2.	What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+
+A. An object in python is a packaged piece of code made up of attributes, and methods defining how a specific class or template will behave.
+    consider a "flower" as a class, the class defines the general features, name, petals, color, and behaviors like is_blooming().
+    the flower class defines the structure for creating a flower object, and the is_blooming objects returns a True or False attribute indicating
+    whether the flower bloomed "True" bloom() or "False" wilted wilt()
+
+3.	In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine. 
+
+Method	                                Description
+Inheritance	                            Inheritance is a fundamental concept in Object-oriented programming (OOP) that allows a subclass (or "child" class) to inherit the attributes and methods from a superclass (or "parent" class.) 
+                                        This promotes code reusability by enabling shared functionality to be defined in one place, reducing redundancy and improving code readability and maintainability.
+                                        Inheritance fosters hierarchical relationships between classes, supporting the "Don't Repeat Yourself" (DRY) principle. It makes implementing changes easier since shared code is centralized, 
+                                        and new functionality can be added through specialized subclasses without modifying the parent class. Python supports both single inheritance (one parent class) and multiple inheritance (multiple parent classes), 
+                                        This concept is particularly useful in large projects.
+
+Polymorphism	                        Polymorphism is a key concept in Object-Oriented programming, meaning "may forms." It allows objects of different classes to be treated uniformly, as long as they all share a common interface or inherit
+                                        from the same parent class. Polymorphism enables developers to write code with more flexibility and extensibility. For example, if you have a parent class Mammal with the method speak(), child classes
+                                        such as Cat, Dog, or Human can take on speak() and override it to provide their specific implementation on how the speak() method will react. You can then loop through a list of animal 
+                                        objects, and call speak() on each, without needing to know their exact types. Polymorphism simplifies code by allowing a single method or function to operate on objects of different types
+                                        as long as they adhere to the expected boundaries.
+
+Operator Overloading	                Operator Overloading is a powerful feature in Object-Oriented programming that allows developers to redefine the behavior of built in Operators(ie. +, -, =, <, >, ==) when they are applied
+                                        to objects of user-defined classes. In python this is achieved by implementing special methods, often referred to as magic methods within a class. For example consider a fraction class.
+                                        The __add__() method can be used to define how the + operator works for adding two fraction objects. The + operator is redefined to add fractions by finding the common denominator and simplifying the result.
+                                        This improves code readability and usability, especially when dealing with custom data structures.

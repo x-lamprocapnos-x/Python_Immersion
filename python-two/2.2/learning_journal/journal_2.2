@@ -1,0 +1,39 @@
+Learning Goals 
+ 
+Describe the basic structure of a Django project  
+Summarize the difference between projects and apps 
+Create a Django project and run it locally 
+Create a superuser for a Django web application 
+ 
+Reflection Questions 
+ 
+1. Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference.  
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.) 
+
+(FOR THIS QUESTION I DECIDED TO USE “COOLMATHGAMES.COM”) 
+If i were to convert coolmathgames.com to a django project I would first assess the website for sections i can divide, 
+for example you can make a profile on cool math games so i would make a users app, a obviously a games app, and an active game app.
+ My next step would be to create the models for the components in each app, the user model would store user information like usernames, 
+ emails, and saved game progress. The games model would contain game titles, descriptions, genres, and links to the actual game titles to play. 
+ The active games model would track real time user activity, high scores, last played sessions and multiplayer interactions. 
+ I would then set up url routing so users could navigate between the different sections of the site, create views and templates to display content dynamically, 
+ and integrate the django admin panel to easily manage users, games, and sessions.
+
+ 
+2. In your own words, describe the steps you would take to deploy a basic Django application locally on your system.  
+
+First you would need to create or activate a virtual environment, and install django. 
+Next you will need to run a command in the terminal depending on your operating system (let’s use windows here) “django-admin.exe startproject projectname” 
+and open your project in your code editor. The root folder and subfolder of your project directory usually takes on the name of your project, 
+to keep from having any confusion, rename your root folder. Creating your database is rather simple, all you need to do is run a command in the terminal 
+from the root directory “py manage.py migrate” and voila you database has been initialized. Next you will need to run another command “py manage.py runserver” 
+and it will open your application locally and provide you a link.
+ 
+
+3. Do some research about the Django admin site and write down how you’d use it during your web application development. 
+
+Django admin seems to be a very powerful dashboard like interface to manage database records without writing sql queries. 
+First I would need to enable the admin panel, create a superuser, access said panel, and then log in with my super user credentials. 
+I’ll need to register models in admin.py to be able to access them in the admin panel. From there I would be able to manage users, 
+and alter or delete records without directly accessing the database. I could even preview and test applications before implementing front end features. 
+
