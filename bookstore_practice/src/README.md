@@ -58,4 +58,10 @@ class Book(models.Model):
 **Run Tests**
 `python manage.py test`
 
+## **Dependencies**
+- Django
+- MySQLClient
+- SQLAlchemy
+- Python-dotenv
+
 
