@@ -1,0 +1,41 @@
+Learning Goals 
+
+Summarize the process of creating views, templates, and URLs  
+Explain how the “V” and “T” parts of MVT architecture work 
+Create a frontend page for your web application 
+
+Reflection Questions 
+ 
+1. Do some research on Django views. In your own words, use an example to explain how Django views work. 
+
+A: In Django, views are like metaphorical windows that look into a specific part of a web application. Just as a window lets you see a specific scene or space,
+a Django view lets users "look into" the content or logic behind a specif URL. They determine what the user sees and how the server responds when a URL is requested.
+When a user visits a URL, Django checks the URL configuration (urls.py files) to figure out which view is responsible for handling the request. The view then proccesses
+the request, often by fetching data from the database (via models), permforming any necessary logic, and finally returning an HTTP response.
+
+ 
+
+2. Imagine you’re working on a Django web development project, and you anticipate that you’ll have to reuse lots of code in various parts of the project. In this scenario, 
+will you use Django function-based views or class-based views, and why? 
+
+A: Since we're at the decision point in this project, I propose using Class-Based Views(CBVs) instead of Function-Based Views(FBVs). CBVs promote better code reusability and modularity, 
+two qualities that are essential when you expect to repeat patterns across different parts of the application. FBVs are great for simple, specific use cases, but they don't scale as well when 
+your application grows. CBVs on the other hand, are structured around object oriented programming principles, which allow us to extend and override behavior through inheritance. This makes it easier
+to maintain consistent logic and UI patterns across multiple views without duplicating code. The main downside is that CBVs can be more complex and may take longer to write or understand initially. 
+However, in a project where reuse and scalability are important, the long-term benefits of CBVs outweight the learning curve, and extra time.
+
+ 
+
+3. Read Django’s documentation on the Django template language and make some notes on its basics. 
+
+A:  
+- A template contains the static park of an HTML page along with special syntax for inserting dynamic content.
+- A Django project can be configured with one or more template engines, or none at all if templates aren't used.
+- Django ships built in backends for its own template system, called the Django template language.
+- Django defines a standard API for loading and rendering templates regardless of which backend is used. 
+- The Django template syntax involves four contructs, 
+1. Variables, insert values from context {{ and }} 
+2. Tags, implement logic like loops and conditions using {% and %}
+3. Filters, modify variable values {{ x | Y }}
+4. Comments, explain template code with {# and #}
+ 
