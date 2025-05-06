@@ -3,7 +3,7 @@ from django.db import models
 # Genre choices
 
 genre_choices = (
-    ('cl', 'Classing'),
+    ('cl', 'Classic'),
     ('ro', 'Romantic'),
     ('co', 'Comic'),
     ('fa', 'Fantasy'),
