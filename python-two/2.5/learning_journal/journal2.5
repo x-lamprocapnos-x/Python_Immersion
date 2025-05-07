@@ -1,0 +1,37 @@
+Learning Goals 
+● Add images to the model and display them on the frontend of your application 
+● Create complex views with access to the model 
+● Display records with views and templates 
+
+Reflection Questions 
+1. In your own words, explain Django static files and how Django handles them. 
+
+A. Static files in Django are any files that will not change dynamically (during runtime/execution/after compilation).
+    The files usually include, css, images, or some javascript, these files don't come from the database, 
+    they remain the same regardless of user interaction. Static files are placed in a static folder, you need to define the "STATIC_URL"
+    in settings.py to set the base URL for accessing static files. You need to load static files in your templates using {%load static%} 
+    and then <img src="{{object.pic.url}}" width="100" height="150" /> for example of an image.
+
+2. Look up the following two Django packages on Django’s official documentation and/or other 
+trusted sources. Write a brief description of each. 
+
+Package ----- Description
+
+ListView - A helpful class based view that's used to display a list of objects from a database model. 
+            This package automatically queries the model and passes the results to a 
+            template with a default context named "object list"
+
+DetailView - Another useful class based view that displays more information about a single object from a model.
+                it requires a "pk" or "slug" in the URL to identify which object to retrieve, and it passes 
+                the object to the templet under the contect name "object".
+
+3. You’re now more than halfway through Achievement 2! Take a moment to reflect on your learning 
+in the course so far. How is it going? What’s something you’re proud of so far? Is there something 
+you’re struggling with? What do you need more practice with? You can use these notes to guide 
+your next mentor call. 
+
+A. I'm excited to be half way through the python course, so far some things are familiar and i pick up on them easy, 
+    like the class based views make sense to me. I got really excited when I learned about pickles. I never knew bin files could be "unpickled".
+    I'm proud of myself for stiving to do my best in this course. Sometimes it's a bit much for my perfectionist trait but I just need to learn
+    to relax and follow the course, it seems I put the wagon in front of the horse on some things, and end up doing double the work. I need more 
+    practice with pickles, and the different syntax for the html {%comments%}, I started out the lesson putting all comments above the <!Doctype>.
