@@ -1,0 +1,23 @@
+Task-2.5 — Model Review and Updates
+
+In Exercise 2.3, I created a single Recipe model with the following fields:
+
+- name
+
+- description
+
+- ingredients
+
+- cooking_time
+
+Changes Made:
+- Added author field: A ForeignKey to the built-in User model to track which user created the recipe.
+
+- Added instructions field: To store detailed cooking steps beyond a brief description.
+
+- Added image field: To allow image upload for visual enhancement.
+
+(Optional) Added difficulty field: To store the calculated difficulty in the database for faster access and filtering.
+
+- Updated save() method: Automatically sets the difficulty based on logic from calculate_difficulty().
+
