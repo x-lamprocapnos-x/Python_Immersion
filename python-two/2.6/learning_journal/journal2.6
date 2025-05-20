@@ -1,0 +1,30 @@
+Learning Goals 
+● Create authentication for your web application 
+● Use GET and POST methods  
+● Password protect your web application’s views 
+
+Reflection Questions 
+
+1. In your own words, write down the importance of incorporating authentication into an application. 
+You can take an example application to explain your answer.  
+
+A. Authentication is extremely important because it controls who has access to specific parts of your application and protecting user data.
+It ensures that users can only perform actions or view content that they're authorized to access. For example, in a recipe-sharing app, users
+should only be able to edit or delete their own recipes. Without authentication, any visitor could modify someone else's content or access private data.
+
+2. In your own words, explain the steps you should take to create a login for your Django web application.  
+
+A. 1. Ensure 'django.contrib.auth' is in your settings.py, 
+    2. Include Django's built-auth URLs, 
+    3. Create a login template
+    4. Use the LoginRequiredMixin or @login_required decorator
+    5. Set the login redirect
+
+3. Look up the following three Django functions on Django’s official documentation and/or other 
+trusted sources and write a brief description of each. 
+
+Function - Description 
+
+authenticate()  - Verifies a user's credentials. It returns a User object if the credentials are valid. Otherwise it returns None.
+redirect()  - A shortcut funtion in Django to return HTTP redirect to a different URL or view.
+include()  - Used in urls.py to include other URLconfs. It allows modular URL routing. 
