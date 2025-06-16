@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html>
-<h1> Search for sales records</h1>
 
-<hr>
+<head>
+    <title>Search Sales Records</title>
+</head>
+
+<body>
+    <h1> Search for sales records</h1>
+
+    <hr>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">search</button>
+    </form>
+    <br>
+    {% if sales_df %}
+    <h2>Filtered Sales Data</h2>
+    <div class="table-container">
+        {{sales_df|safe}}
+    </div>
+    <br>
+    <img src="data:image/png;base64, {{chart|safe}}">
+    {% else %}
+    <h3> No sales data available for that book </h3>
+    {% endif %}
+</body>
+
 
 </html>
