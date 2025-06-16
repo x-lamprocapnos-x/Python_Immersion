@@ -1,0 +1,72 @@
+Learning Goals 
+● Work on elements of two-way communication like creating forms and buttons 
+● Implement search and visualization (reports/charts) features 
+● Use QuerySet API, DataFrames (with pandas), and plotting libraries (with matplotlib) 
+
+Reflection Questions 
+
+1. Consider your favorite website/application (you can also take CareerFoundry). Think about the various data that your favorite website/application collects. 
+Write down how analyzing the collected data could help the website/application.  
+
+A: I chose Spotify as my favorite application because it relies heavily on data to personalize the user experience. Spotify collects a wide range of user data, 
+including listening frequency, skips, repeats, likes, follows, search history, location, and preferences across genres, artists, and podcasts.
+
+By analyzing this data, Spotify can:
+
+- Create personalized playlists like “Discover Weekly” or “Your Daily Mix,” improving user engagement.
+- Notify users of upcoming concerts in their area based on location and listening preferences.
+- Recommend new songs or podcasts by recognizing patterns, such as “users who liked Artist A also liked Artist B.”
+- This kind of data analysis not only enhances the user’s listening experience, but also helps Spotify with targeted marketing and feedback to artists about how their music is performing with different audiences.
+
+
+2. Read the Django official documentation on QuerySet API. Note down the different ways in which you can evaluate a QuerySet. 
+
+A: While working on my bookstore project, I explored different ways to evaluate a QuerySet. Below is a summary of key methods I encountered and their purposes:
+
+ A.1 Sale.objects.all()
+    - Retrieves all records from the Sale model.
+    - The query is lazy — it won’t hit the database until the data is actually used.
+
+ A.2 Sale.objects.filter(book__name=book_title)
+    - Filters results to only include sales related to a specific book title.
+    - Great for searching with conditions using foreign keys or specific fields.
+
+ A.3 qs.values()
+    - Converts the QuerySet into a list of dictionaries.
+    - Each dictionary contains key-value pairs representing field names and their data.
+
+ A.4 qs.values_list()
+    - eturns data as a list of tuples.
+    - More lightweight than values(), especially useful when only specific fields are needed. With flat=True, it returns a flat list (only for a single field).
+
+ A.5 Sale.objects.get(id=1)
+- Fetches a single object by its primary key.
+- Immediately hits the database and will raise errors if the object doesn't exist or if the query returns more than one result.
+
+These methods helped me better understand how Django interacts with the database and how I can prepare data for further processing or analysis.
+
+
+3. In the Exercise, you converted your QuerySet to DataFrame. Now do some research on the advantages and disadvantages of QuerySet and DataFrame, 
+and explain the ways in which DataFrame is better for data processing. 
+
+A. While both QuerySet and DataFrame are powerful tools, each has its own strengths and weaknesses depending on the use case:
+
+QuerySet (Django ORM):
+ Advantages:
+    - Integrates directly with Django’s ORM.
+    - Optimized for interacting with the database.
+    - Allows chaining of filters for clean, readable queries.
+
+ Disadvantages:
+    - Lazy evaluation can be confusing for beginners.
+    - Less flexible for complex data manipulation and analysis.
+
+DataFrame (Pandas):
+ Advantages:
+    - Offers rich functionality for data manipulation and transformation.
+    - Makes it easy to visualize and export data.
+    - Displays data in a clear, table format.
+
+Disadvantages:
+    - Loads data into memory, which can be inefficient for large datasets.
+    - Not directly connected to the database (requires conversion from QuerySet).
