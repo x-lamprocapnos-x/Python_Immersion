@@ -15,6 +15,9 @@ Record sales by quantity, price, and timestamp.
 - ***Salesperson Profiles***
 Manage profiles linked to Django's built-in User model.
 
+- ***Data Visualization***
+Generate dynamic sales charts (bar, line, and pie) using `matplotlib` and `pandas`. Charts are rendered in-memory using `BytesIO` and `base64`, allowing for seamless web integration without saving files to disk.
+
 - ***Testing***
 Basic unit tests implemented for the Book model.
 
@@ -30,6 +33,7 @@ Basic unit tests implemented for the Book model.
 - Backend: Django 4.2
 - Database: SQLite3
 - Language: Python 3.x
+- Visualization: Matplotlib + Pandas
 
 ## **Installation**
 1. Clone the repo
@@ -37,7 +41,7 @@ Basic unit tests implemented for the Book model.
 `cd bookstore`
 
 2. Create and activate a virtual environment
-`python -m venv env`
+`python -m venv env` # Example: web-dev
 `source env/bin/activate`  # On Windows use `env\Scripts\activate`
 
 3. Install dependencies
