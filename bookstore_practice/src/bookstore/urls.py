@@ -20,8 +20,10 @@ from django.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import login_view, logout_view
+from books.views import BookListView
 
 urlpatterns = [
+    path('', BookListView.as_view(), name='home'),
     path('admin/', admin.site.urls),
     path('sales/', include('sales.urls')),
     path('books/', include('books.urls')),
